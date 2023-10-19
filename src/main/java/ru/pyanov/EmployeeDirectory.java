@@ -32,7 +32,7 @@ public class EmployeeDirectory {
         List<Employee> employeeList = new ArrayList<>();
         for (Employee employee : employees) {
             if (employee.getWorkExperience() == workExperience) {
-                employees.add(employee);
+                employeeList.add(employee);
             }
         }
         return employeeList;

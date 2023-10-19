@@ -1,5 +1,7 @@
 package ru.pyanov;
 
+import java.util.List;
+
 /**
  * Создать справочник сотрудников.
  * Необходимо:
@@ -26,6 +28,8 @@ public class Main {
         employeeDirectory.addEmployee(employee2);
         employeeDirectory.addEmployee(employee3);
 
-        System.out.println(employeeDirectory);
+        System.out.println(employeeDirectory.findEmployeeByExperience(5));
+        System.out.println(employeeDirectory.findPhoneNumberByName("Сидорова"));
+        System.out.println(employeeDirectory.findEmployeeByServiceNumber(456));
     }
 }

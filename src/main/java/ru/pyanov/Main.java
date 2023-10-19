@@ -1,6 +1,5 @@
 package ru.pyanov;
 
-import java.util.List;
 
 /**
  * Создать справочник сотрудников.

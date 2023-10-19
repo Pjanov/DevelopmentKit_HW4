@@ -36,4 +36,14 @@ public class Employee {
     public int getWorkExperience() {
         return workExperience;
     }
+
+    @Override
+    public String toString() {
+        return "Сотрудник{" +
+                "табельный номер: " + employeeNumber +
+                ", номер телефона: '" + phoneNumber + '\'' +
+                ", имя: '" + name + '\'' +
+                ", стаж: " + workExperience +
+                '}';
+    }
 }

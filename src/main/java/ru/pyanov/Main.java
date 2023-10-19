@@ -16,6 +16,16 @@ package ru.pyanov;
  */
 public class Main {
     public static void main(String[] args) {
+        EmployeeDirectory employeeDirectory = new EmployeeDirectory();
 
+        Employee employee1 = new Employee(123, "555-1234", "Иванов", 5);
+        Employee employee2 = new Employee(456, "555-5678", "Петров", 3);
+        Employee employee3 = new Employee(789, "555-9876", "Сидорова", 8);
+
+        employeeDirectory.addEmployee(employee1);
+        employeeDirectory.addEmployee(employee2);
+        employeeDirectory.addEmployee(employee3);
+
+        System.out.println(employeeDirectory);
     }
 }

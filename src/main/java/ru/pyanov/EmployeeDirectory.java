@@ -3,6 +3,9 @@ package ru.pyanov;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Справочник сотрудников
+ */
 public class EmployeeDirectory {
     private List<Employee> employees;
 
@@ -68,5 +71,10 @@ public class EmployeeDirectory {
 
     public List<Employee> getEmployees() {
         return employees;
+    }
+
+    @Override
+    public String toString() {
+        return "Справочник сотрудников" + employees;
     }
 }
